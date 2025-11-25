@@ -4,6 +4,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.reed929.roguelike.block.ModBlocks;
+import net.reed929.roguelike.effect.ModEffects;
 import net.reed929.roguelike.item.ModCreativeModeTabs;
 import net.reed929.roguelike.item.ModItems;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class Roguelike {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
