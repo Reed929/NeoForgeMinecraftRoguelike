@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bloodstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "roguelike:raw_bloodstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "roguelike:bloodstone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bloodstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "roguelike:bloodstone_ore"
+    ]
+  }
+}

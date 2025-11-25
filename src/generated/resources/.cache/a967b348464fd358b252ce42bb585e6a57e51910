@@ -1,0 +1,6 @@
+// 1.21.10	2025-11-24T18:12:28.9418349	Model Definitions - roguelike
+cfbbb71294b2dfa8178d7f183a47750294807aa6 assets/roguelike/blockstates/bloodstone_ore.json
+a4303b548aa8a66c3990ee8e829eaed8fea02fda assets/roguelike/items/bloodstone_ore.json
+3b7e12827b9f9c110d879e7ac158a5a7dc15b6b8 assets/roguelike/items/raw_bloodstone.json
+c1d359276c595396ac3877832070e362f681e5cf assets/roguelike/models/block/bloodstone_ore.json
+36cc5ed4872da57d128c0cd23beafc9911572ec2 assets/roguelike/models/item/raw_bloodstone.json
