@@ -6,9 +6,11 @@ import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.reed929.roguelike.Roguelike;
 import net.reed929.roguelike.block.ModBlocks;
+import net.reed929.roguelike.item.ModArmorMaterials;
 import net.reed929.roguelike.item.ModItems;
 
 import java.util.stream.Stream;
@@ -40,5 +42,11 @@ public class ModModelProvider extends ModelProvider {
         /* BOWS */
         itemModels.createFlatItemModel(ModItems.BLOODSTONE_BOW.get(), ModelTemplates.BOW);
         itemModels.generateBow(ModItems.BLOODSTONE_BOW.get());
+
+        /* ARMOR */
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_BOOTS.get(), ModelTemplates.FLAT_ITEM);
     }
 }

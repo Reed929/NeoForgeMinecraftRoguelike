@@ -2,11 +2,13 @@ package net.reed929.roguelike.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import net.reed929.roguelike.Roguelike;
+import net.reed929.roguelike.item.ModArmorMaterials;
 import net.reed929.roguelike.item.ModItems;
 import net.reed929.roguelike.util.ModTags;
 
@@ -39,6 +41,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.HOES)
                 .add(ModItems.BLOODSTONE_HOE.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BLOODSTONE_HELMET.get())
+                .add(ModItems.BLOODSTONE_CHESTPLATE.get())
+                .add(ModItems.BLOODSTONE_LEGGINGS.get())
+                .add(ModItems.BLOODSTONE_BOOTS.get());
+
     }
 
 }

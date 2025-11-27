@@ -1,8 +1,9 @@
-// 1.21.10	2025-11-25T14:39:05.6296609	Tags for minecraft:item mod id roguelike
+// 1.21.10	2025-11-26T22:43:10.2347115	Tags for minecraft:item mod id roguelike
 6efd7daa272a39d0405a6e3f1a6a79ca71f6651a data/minecraft/tags/item/axes.json
 81cc3d6eb1e80f9d71ab53f5c03eb4286fc71968 data/minecraft/tags/item/hoes.json
 3a7e3cfb82c71c33b78baaa8db0c70828047c24c data/minecraft/tags/item/pickaxes.json
 725554d18a3842ab3dd0dcdda388080a5410c77c data/minecraft/tags/item/shovels.json
 bc3a0476981ba529bf946070136aa7fc052f6a3f data/minecraft/tags/item/swords.json
+6ea210f72822b24836c5cb18e6c374ea29d6488d data/minecraft/tags/item/trimmable_armor.json
 82032c9d7d4d86c55f5e547baee35c528fef5ab3 data/roguelike/tags/item/bloodstone_repairable.json
 82032c9d7d4d86c55f5e547baee35c528fef5ab3 data/roguelike/tags/item/transformable_items.json
