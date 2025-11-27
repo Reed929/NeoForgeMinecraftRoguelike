@@ -22,6 +22,12 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //ADD ITEMS TO TAB
                         output.accept(ModItems.RAW_BLOODSTONE);
+                        output.accept(ModItems.BLOODSTONE_SWORD);
+                        output.accept(ModItems.BLOODSTONE_PICKAXE);
+                        output.accept(ModItems.BLOODSTONE_AXE);
+                        output.accept(ModItems.BLOODSTONE_SHOVEL);
+                        output.accept(ModItems.BLOODSTONE_HOE);
+                        output.accept(ModItems.BLOODSTONE_BOW);
 
                     }).build());
 
@@ -31,6 +37,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //ADD ITEMS TO TAB
                         output.accept(ModBlocks.BLOODSTONE_ORE);
+                        output.accept(ModBlocks.BLOODSTONE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.BLOODSTONE_NETHER_ORE);
+                        output.accept(ModBlocks.BLOODSTONE_END_ORE);
+
 
                     }).build());
 

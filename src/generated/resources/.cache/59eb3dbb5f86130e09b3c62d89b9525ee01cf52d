@@ -1,2 +1,5 @@
-// 1.21.10	2025-11-24T18:12:28.943806	Loot Tables
+// 1.21.10	2025-11-25T15:08:16.3244236	Loot Tables
+de605c462890d336baba8f1b51088dc5944fdb8a data/roguelike/loot_table/blocks/bloodstone_deepslate_ore.json
+822c6d50060e89c9a82f85ad9f8de76fcd16ed04 data/roguelike/loot_table/blocks/bloodstone_end_ore.json
+c3d98b13f27a4b9505ab4f16efe0d1d591b1ef34 data/roguelike/loot_table/blocks/bloodstone_nether_ore.json
 1900c2d635600a99f22a3ff286181339ffeb96de data/roguelike/loot_table/blocks/bloodstone_ore.json

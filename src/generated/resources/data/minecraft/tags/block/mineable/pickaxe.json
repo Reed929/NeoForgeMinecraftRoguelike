@@ -1,5 +1,8 @@
 {
   "values": [
-    "roguelike:bloodstone_ore"
+    "roguelike:bloodstone_ore",
+    "roguelike:bloodstone_deepslate_ore",
+    "roguelike:bloodstone_nether_ore",
+    "roguelike:bloodstone_end_ore"
   ]
 }

@@ -29,6 +29,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.BLOODSTONE_ORE.get(),
                 block -> createOreDrop(ModBlocks.BLOODSTONE_ORE.get(), ModItems.RAW_BLOODSTONE.get()));
+        add(ModBlocks.BLOODSTONE_DEEPSLATE_ORE.get(),
+                block -> createOreDrop(ModBlocks.BLOODSTONE_DEEPSLATE_ORE.get(), ModItems.RAW_BLOODSTONE.get()));
+        add(ModBlocks.BLOODSTONE_NETHER_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.BLOODSTONE_NETHER_ORE.get(), ModItems.RAW_BLOODSTONE.get(), 2, 5));
+        add(ModBlocks.BLOODSTONE_END_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.BLOODSTONE_END_ORE.get(), ModItems.RAW_BLOODSTONE.get(), 2, 5));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

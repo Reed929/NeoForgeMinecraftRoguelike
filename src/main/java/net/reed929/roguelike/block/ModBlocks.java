@@ -21,6 +21,15 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLOODSTONE_ORE = registerBlock("bloodstone_ore",
             (properties) -> new DropExperienceBlock(UniformInt.of(1, 3),
                     properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> BLOODSTONE_DEEPSLATE_ORE = registerBlock("bloodstone_deepslate_ore",
+            (properties) -> new DropExperienceBlock(UniformInt.of(1, 3),
+                    properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BLOODSTONE_NETHER_ORE = registerBlock("bloodstone_nether_ore",
+            (properties) -> new DropExperienceBlock(UniformInt.of(1, 3),
+                    properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)));
+    public static final DeferredBlock<Block> BLOODSTONE_END_ORE = registerBlock("bloodstone_end_ore",
+            (properties) -> new DropExperienceBlock(UniformInt.of(1, 3),
+                    properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {

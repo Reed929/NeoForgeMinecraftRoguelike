@@ -26,7 +26,19 @@ public class ModModelProvider extends ModelProvider {
 
         /* BLOCKS */
         blockModels.createTrivialCube(ModBlocks.BLOODSTONE_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.BLOODSTONE_DEEPSLATE_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.BLOODSTONE_NETHER_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.BLOODSTONE_END_ORE.get());
 
+        /* TOOLS */
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.BLOODSTONE_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        /* BOWS */
+        itemModels.createFlatItemModel(ModItems.BLOODSTONE_BOW.get(), ModelTemplates.BOW);
+        itemModels.generateBow(ModItems.BLOODSTONE_BOW.get());
     }
-
 }

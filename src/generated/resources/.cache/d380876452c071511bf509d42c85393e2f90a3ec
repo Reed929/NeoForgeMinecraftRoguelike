@@ -1,3 +1,3 @@
-// 1.21.10	2025-11-24T18:12:28.9448032	Tags for minecraft:block mod id roguelike
-7c70ea3b9edf52b68a96fcc032c01502ca89c7cd data/minecraft/tags/block/mineable/pickaxe.json
-7c70ea3b9edf52b68a96fcc032c01502ca89c7cd data/minecraft/tags/block/needs_iron_tool.json
+// 1.21.10	2025-11-25T15:13:51.7735318	Tags for minecraft:block mod id roguelike
+32f6c39be2289e93d2a80482a42497bb08ee14f4 data/minecraft/tags/block/mineable/pickaxe.json
+32f6c39be2289e93d2a80482a42497bb08ee14f4 data/roguelike/tags/block/needs_bloodstone_tool.json

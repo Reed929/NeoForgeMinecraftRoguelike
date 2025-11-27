@@ -5,8 +5,11 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.reed929.roguelike.block.ModBlocks;
 import net.reed929.roguelike.effect.ModEffects;
+import net.reed929.roguelike.enchantment.ModEnchantmentEffects;
 import net.reed929.roguelike.item.ModCreativeModeTabs;
 import net.reed929.roguelike.item.ModItems;
+import net.reed929.roguelike.potion.ModPotions;
+import net.reed929.roguelike.sound.ModSounds;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.neoforged.api.distmarker.Dist;
@@ -42,9 +45,14 @@ public class Roguelike {
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

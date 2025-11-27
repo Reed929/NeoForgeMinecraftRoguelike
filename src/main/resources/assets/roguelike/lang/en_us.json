@@ -2,6 +2,23 @@
   "item.roguelike.raw_bloodstone": "Raw Bloodstone",
 
   "block.roguelike.bloodstone_ore": "Bloodstone Ore",
+  "block.roguelike.bloodstone_deepslate_ore": "Bloodstone Deepslate Ore",
+  "block.roguelike.bloodstone_nether_ore": "Bloodstone Nether Ore",
+  "block.roguelike.bloodstone_end_ore": "Bloodstone End Ore",
+
+  "item.roguelike.bloodstone_sword": "Bloodstone Sword",
+  "item.roguelike.bloodstone_pickaxe": "Bloodstone Pickaxe",
+  "item.roguelike.bloodstone_axe": "Bloodstone Axe",
+  "item.roguelike.bloodstone_shovel": "Bloodstone Shovel",
+  "item.roguelike.bloodstone_hoe": "Bloodstone Hoe",
+  "item.roguelike.bloodstone_bow": "Bloodstone Bow",
+
+  "effect.roguelike.healing_amp_effect": "Healing AMP",
+  "item.minecraft.potion.effect.healing_amp_potion": "Healing AMP Potion",
+  "item.minecraft.splash_potion.effect.healing_amp_potion": "Healing AMP Splash Potion",
+  "item.minecraft.lingering_potion.effect.healing_amp_potion": "Healing AMP Lingering Potion",
+
+  "enchantment.roguelike.lightning_striker": "Lightning Striker",
 
   "creative.roguelike.roguelike_items": "Roguelike Items",
   "creative.roguelike.roguelike_blocks": "Roguelike Blocks"

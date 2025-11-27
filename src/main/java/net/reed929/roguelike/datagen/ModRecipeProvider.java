@@ -2,10 +2,7 @@ package net.reed929.roguelike.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -41,7 +38,7 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes() {
         List<ItemLike> BLOODSTONE_SMELTABLES = List.of(ModItems.RAW_BLOODSTONE,
-                ModBlocks.BLOODSTONE_ORE);
+                ModBlocks.BLOODSTONE_ORE,ModBlocks.BLOODSTONE_DEEPSLATE_ORE, ModBlocks.BLOODSTONE_NETHER_ORE, ModBlocks.BLOODSTONE_END_ORE);
 
         shaped(RecipeCategory.MISC, ModBlocks.BLOODSTONE_ORE.get())
                 .pattern("BBB")
@@ -49,7 +46,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("BBB")
                 .define('B', ModItems.RAW_BLOODSTONE.get())
                 .unlockedBy("has_bloodstone", has(ModItems.RAW_BLOODSTONE)).save(output);
-
 
         oreSmelting(output, BLOODSTONE_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "bloodstone");
         oreBlasting(output, BLOODSTONE_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "bloodstone");
