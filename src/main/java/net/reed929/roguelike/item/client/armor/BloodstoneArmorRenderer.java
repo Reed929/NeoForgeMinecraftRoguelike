@@ -1,11 +1,13 @@
 package net.reed929.roguelike.item.client.armor;
 
+import net.minecraft.client.renderer.entity.state.HumanoidRenderState;
+import net.reed929.roguelike.item.custom.BloodstoneArmorItem;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
+import software.bernie.geckolib.renderer.base.GeoRenderState;
 
-public final class BloodstoneArmorRenderer extends GeoArmorRenderer<BloodstoneArmorIteme>
+public final class BloodstoneArmorRenderer<R extends HumanoidRenderState & GeoRenderState> extends GeoArmorRenderer<BloodstoneArmorItem, R>
 {
     public BloodstoneArmorRenderer() {
-        // Using DefaultedItemGeoModel like this puts our 'location' as item/armor/example armor in the assets folders.
         super(new BloodstoneArmorModel());
     }
 }

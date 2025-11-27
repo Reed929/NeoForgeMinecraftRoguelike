@@ -15,7 +15,7 @@ public class BloodstoneArmorModel extends GeoModel<BloodstoneArmorItem> {
 
     @Override
     public ResourceLocation getTextureResource(GeoRenderState renderState) {
-        return ResourceLocation.fromNamespaceAndPath(Roguelike.MOD_ID, "textures/models/bloodstone_armor.png");
+        return ResourceLocation.fromNamespaceAndPath(Roguelike.MOD_ID, "textures/models/armor/bloodstone_armor.png");
     }
 
     @Override
