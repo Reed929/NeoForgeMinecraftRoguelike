@@ -28,6 +28,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLOODSTONE_SHOVEL);
                         output.accept(ModItems.BLOODSTONE_HOE);
                         output.accept(ModItems.BLOODSTONE_BOW);
+                        output.accept(ModItems.BLOODSTONE_HELMET);
+                        output.accept(ModItems.BLOODSTONE_CHESTPLATE);
+                        output.accept(ModItems.BLOODSTONE_LEGGINGS);
+                        output.accept(ModItems.BLOODSTONE_BOOTS);
 
                     }).build());
 

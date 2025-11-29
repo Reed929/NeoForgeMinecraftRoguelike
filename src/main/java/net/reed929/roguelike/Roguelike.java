@@ -8,8 +8,11 @@ import net.reed929.roguelike.effect.ModEffects;
 import net.reed929.roguelike.enchantment.ModEnchantmentEffects;
 import net.reed929.roguelike.item.ModCreativeModeTabs;
 import net.reed929.roguelike.item.ModItems;
+import net.reed929.roguelike.item.client.armor.BloodstoneArmorRenderer;
+import net.reed929.roguelike.item.custom.BloodstoneArmorItem;
 import net.reed929.roguelike.potion.ModPotions;
 import net.reed929.roguelike.sound.ModSounds;
+import net.reed929.roguelike.util.ModItemProperties;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.neoforged.api.distmarker.Dist;
@@ -23,6 +26,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import software.bernie.geckolib.GeckoLib;
+import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Roguelike.MOD_ID)
@@ -75,6 +80,7 @@ public class Roguelike {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomItemProperties();
 
         }
 
