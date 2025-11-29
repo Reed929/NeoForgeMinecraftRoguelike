@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": "roguelike:raw_bloodstone"
+    "B": {
+      "item": "roguelike:raw_bloodstone"
+    }
   },
   "pattern": [
     "BBB",

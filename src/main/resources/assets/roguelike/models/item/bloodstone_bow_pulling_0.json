@@ -1,0 +1,6 @@
+{
+    "parent": "roguelike:item/bloodstone_bow",
+    "textures": {
+        "layer0": "roguelike:item/bloodstone_bow_pulling_0"
+    }
+}

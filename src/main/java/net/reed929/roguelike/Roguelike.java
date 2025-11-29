@@ -12,6 +12,7 @@ import net.reed929.roguelike.item.client.armor.BloodstoneArmorRenderer;
 import net.reed929.roguelike.item.custom.BloodstoneArmorItem;
 import net.reed929.roguelike.potion.ModPotions;
 import net.reed929.roguelike.sound.ModSounds;
+import net.reed929.roguelike.util.ModItemProperties;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.neoforged.api.distmarker.Dist;
@@ -79,6 +80,8 @@ public class Roguelike {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomItemProperties();
+
         }
 
         @SubscribeEvent
