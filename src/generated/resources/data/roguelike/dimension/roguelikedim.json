@@ -1,0 +1,11 @@
+{
+  "type": "roguelike:roguelike_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "roguelike:dungeon_biome"
+    },
+    "settings": "minecraft:end"
+  }
+}

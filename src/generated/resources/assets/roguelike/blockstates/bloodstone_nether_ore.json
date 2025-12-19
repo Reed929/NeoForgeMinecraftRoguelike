@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "roguelike:block/bloodstone_nether_ore"
+    }
+  }
+}

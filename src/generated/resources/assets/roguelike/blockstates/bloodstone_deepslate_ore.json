@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "roguelike:block/bloodstone_deepslate_ore"
+    }
+  }
+}
