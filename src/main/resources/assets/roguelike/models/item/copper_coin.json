@@ -1,0 +1,56 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "roguelike:item/copper_coin"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "roguelike:count": 2
+      },
+      "model": "roguelike:item/copper_coin_2"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 3
+      },
+      "model": "roguelike:item/copper_coin_3"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 4
+      },
+      "model": "roguelike:item/copper_coin_4"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 5
+      },
+      "model": "roguelike:item/copper_coin_5"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 6
+      },
+      "model": "roguelike:item/copper_coin_6"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 7
+      },
+      "model": "roguelike:item/copper_coin_7"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 8
+      },
+      "model": "roguelike:item/copper_coin_8"
+    },
+    {
+      "predicate": {
+        "roguelike:count": 9
+      },
+      "model": "roguelike:item/copper_coin_9"
+    }
+  ]
+}

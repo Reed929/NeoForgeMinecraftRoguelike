@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //ADD ITEMS TO TAB
                         output.accept(ModItems.RAW_BLOODSTONE);
+                        output.accept(ModItems.COPPER_COIN);
                         output.accept(ModItems.BLOODSTONE_SWORD);
                         output.accept(ModItems.BLOODSTONE_PICKAXE);
                         output.accept(ModItems.BLOODSTONE_AXE);
@@ -47,7 +48,6 @@ public class ModCreativeModeTabs {
 
 
                     }).build());
-
 
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,6 @@
+{
+  "parent": "roguelike:item/copper_coin",
+  "textures": {
+    "layer0": "roguelike:item/copper_coin_6"
+  }
+}

@@ -12,6 +12,7 @@ public class ModItems {
 
     //ADDING ITEMS
     public static final DeferredItem<Item> RAW_BLOODSTONE = ITEMS.registerSimpleItem("raw_bloodstone");
+    public static final DeferredItem<Item> COPPER_COIN = ITEMS.registerSimpleItem("copper_coin");
 
     //BLOODSTONE TOOLS
     public static final DeferredItem<SwordItem> BLOODSTONE_SWORD = ITEMS.register("bloodstone_sword",

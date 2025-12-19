@@ -32,5 +32,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLOODSTONE_NETHER_ORE.get())
                 .add(ModBlocks.BLOODSTONE_END_ORE.get());
 
+        tag(ModTags.Blocks.PORTAL_FRAME_BLOCKS)
+                .add(ModBlocks.BLOODSTONE_ORE.get());
     }
 }

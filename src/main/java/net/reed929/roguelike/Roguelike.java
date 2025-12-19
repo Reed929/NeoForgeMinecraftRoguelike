@@ -1,6 +1,7 @@
 package net.reed929.roguelike;
 
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.reed929.roguelike.block.ModBlocks;
@@ -8,11 +9,12 @@ import net.reed929.roguelike.effect.ModEffects;
 import net.reed929.roguelike.enchantment.ModEnchantmentEffects;
 import net.reed929.roguelike.item.ModCreativeModeTabs;
 import net.reed929.roguelike.item.ModItems;
-import net.reed929.roguelike.item.client.armor.BloodstoneArmorRenderer;
-import net.reed929.roguelike.item.custom.BloodstoneArmorItem;
 import net.reed929.roguelike.potion.ModPotions;
+import net.reed929.roguelike.util.KeyBindings;
+import net.reed929.roguelike.screen.ModMenus;
 import net.reed929.roguelike.sound.ModSounds;
 import net.reed929.roguelike.util.ModItemProperties;
+import net.reed929.roguelike.worldgen.portal.ModPortals;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.neoforged.api.distmarker.Dist;
@@ -26,8 +28,6 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import software.bernie.geckolib.GeckoLib;
-import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Roguelike.MOD_ID)
@@ -53,6 +53,7 @@ public class Roguelike {
         ModPotions.register(modEventBus);
         ModEnchantmentEffects.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModMenus.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -61,7 +62,7 @@ public class Roguelike {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(ModPortals::register);
     }
 
     // Add the example block item to the building blocks tab
@@ -81,7 +82,6 @@ public class Roguelike {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
-
         }
 
         @SubscribeEvent
@@ -96,6 +96,12 @@ public class Roguelike {
 
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
+
+        }
+
+        @SubscribeEvent // on the mod event bus only on the physical client
+        public static void registerBindings(RegisterKeyMappingsEvent event) {
+            event.register(KeyBindings.INSTANCE.OPEN_EQUIPMENT);
 
         }
     }

@@ -20,6 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLOODSTONE_DEEPSLATE_ORE);
         blockWithItem(ModBlocks.BLOODSTONE_END_ORE);
         blockWithItem(ModBlocks.BLOODSTONE_NETHER_ORE);
+
+
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

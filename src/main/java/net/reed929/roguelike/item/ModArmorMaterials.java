@@ -27,10 +27,10 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 5);
             }),
             16,                       // durability multiplier
-            SoundEvents.ARMOR_EQUIP_NETHERITE, // equip sound
-            2.0f,                     // toughness
-            0.1f,                     // knockback resistance
-            () -> ModItems.RAW_BLOODSTONE.get() // repair item
+            SoundEvents.ARMOR_EQUIP_NETHERITE,       // equip sound
+            2.0f,                                    // toughness
+            0.1f,                                    // knockback resistance
+            () -> ModItems.RAW_BLOODSTONE.get()      // repair item
     );
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,

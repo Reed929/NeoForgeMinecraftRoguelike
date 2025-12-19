@@ -3,12 +3,18 @@ package net.reed929.roguelike.util;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.reed929.roguelike.Roguelike;
 import net.reed929.roguelike.item.ModItems;
 
 public class ModItemProperties {
     public static void addCustomItemProperties() {
         makeCustomBow(ModItems.BLOODSTONE_BOW.get());
+        ItemProperties.register(ModItems.COPPER_COIN.get(), ResourceLocation.fromNamespaceAndPath(Roguelike.MOD_ID, "count"),
+                (itemStack, clientLevel, livingEntity, i) -> Math.min(itemStack.getCount(),9));
     }
+
+
+
 
     private static void makeCustomBow(Item item) {
         ItemProperties.register(item, ResourceLocation.withDefaultNamespace("pull"), (p_344163_, p_344164_, p_344165_, p_344166_) -> {

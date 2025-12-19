@@ -1,5 +1,6 @@
 {
   "item.roguelike.raw_bloodstone": "Raw Bloodstone",
+  "item.roguelike.copper_coin": "Copper Coin",
 
   "block.roguelike.bloodstone_ore": "Bloodstone Ore",
   "block.roguelike.bloodstone_deepslate_ore": "Bloodstone Deepslate Ore",
@@ -26,5 +27,7 @@
   "enchantment.roguelike.lightning_striker": "Lightning Striker",
 
   "creative.roguelike.roguelike_items": "Roguelike Items",
-  "creative.roguelike.roguelike_blocks": "Roguelike Blocks"
+  "creative.roguelike.roguelike_blocks": "Roguelike Blocks",
+
+  "key.roguelike.open_equipment": "Open Equipment"
 }

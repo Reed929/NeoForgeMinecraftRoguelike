@@ -34,6 +34,11 @@ repositories {
         name = "geckolib"
         url  = uri("https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/")
     }
+
+    maven {
+        name = "AzureDoom Mods"
+        url = "https://maven.azuredoom.com/mods"
+    }
 }
 
 base {
@@ -148,6 +153,7 @@ dependencies {
     // Example mod dependency using a file as dependency
     // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
     implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    implementation "net.kyrptonaught.customportalapi:cpapireforged-neo-${minecraft_version}:${portalapi_version}"
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")

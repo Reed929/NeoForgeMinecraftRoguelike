@@ -19,7 +19,7 @@ public class HealingAmpEffect extends MobEffect {
 
         if (entity.hasEffect(ModEffects.HEALING_AMP_EFFECT)) {
             int amplifier = entity.getEffect(ModEffects.HEALING_AMP_EFFECT).getAmplifier();
-            float multiplier = 1f + 0.5f * (amplifier + 1f);
+            float multiplier = 1f + 0.25f * (amplifier + 1f);
             event.setAmount(event.getAmount() * multiplier);
         }
     }

@@ -12,6 +12,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_BLOODSTONE_TOOL = createTag("needs_bloodstone_tool");
         public static final TagKey<Block> INCORRECT_FOR_BLOODSTONE_TOOL = createTag("incorrect_for_bloodstone_tool");
+        public static final TagKey<Block> PORTAL_FRAME_BLOCKS = createTag("portal_frame_blocks");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Roguelike.MOD_ID, name));
